@@ -1,0 +1,37 @@
+/**
+ * jQuery UI TinyTbl
+ * Creates a scrollable table with fixed thead, tfoot and columns
+ * CSS-Styles
+ *
+ * Copyright (c) 2011 Michael Keck <http://www.michaelkeck.de/>
+ * Released:  2011-10-08
+ * Version:   2011-10-08
+ * I-Version: 1.9.0a
+ * License:   Dual licensed under the MIT or GPL Version 2 licenses.
+ *            http://jquery.org/license
+ * Depends:   jquery.ui.core
+ *            jquery.ui.widget
+ */
+.ui-tinytbl .ui-widget-header td, .ui-tinytbl .ui-widget-header th   { border: 1px solid #e78f08; } /* NOTE: Theme specific! */
+.ui-tinytbl .ui-widget-content td, .ui-tinytbl .ui-widget-content th { border: 1px solid #dddddd; } /* NOTE: Theme specific! */
+.ui-tinytbl table { border-collapse: collapse; table-layout: fixed; }
+.ui-tinytbl-tb-right, .ui-tinytbl-firstrow td, .ui-tinytbl-firstrow th { border-top: 0 none !important; }
+.ui-tinytbl td, .ui-tinytbl th, .ui-tinytbl-tb-right, .ui-tinytbl-lastrow td, .ui-tinytbl-lastrow th { border-bottom: 0 none !important; }
+.ui-tinytbl-tb-left { border-top: 0 none !important; }
+.ui-tinytbl-tb-left, .ui-tinytbl-tb-right, .ui-tinytbl-tf-left, .ui-tinytbl-tf-right, .ui-tinytbl-th-left, .ui-tinytbl-th-right { margin: 0 0 0 0; padding: 0 0 0 0; }
+
+/* Left to Right */
+.ui-tinytbl { direction: ltr; margin: 0 0 0 0; padding: 0 0 0 0; }
+.ui-tinytbl td, .ui-tinytbl th { border-right: 0 none !important; }
+.ui-tinytbl td.ui-tinytbl-firstcol, .ui-tinytbl th.ui-tinytbl-firstcol { border-left: 0 none !important; }
+.ui-tinytbl .ui-tinytbl-tb-left,  .ui-tinytbl .ui-tinytbl-tf-left,  .ui-tinytbl .ui-tinytbl-th-left  { border-right: 0 none !important; margin-left: 0px; }
+.ui-tinytbl .ui-tinytbl-tb-right, .ui-tinytbl .ui-tinytbl-tf-right, .ui-tinytbl .ui-tinytbl-th-right { margin-left: -1px; }
+.ui-tinytbl .ui-tinytbl-tb-right { border-right: 0 none !important; }
+
+/* Right to Left */
+.ui-tinytbl-rtl { direction: rtl; margin: 0 0 0 0; padding: 0 0 0 0; }
+.ui-tinytbl-rtl td, .ui-tinytbl-rtl th { border-left: 0 none !important; }
+.ui-tinytbl-rtl td.ui-tinytbl-firstcol, .ui-tinytbl-rtl th.ui-tinytbl-firstcol { border-right: 0 none !important; }
+.ui-tinytbl-rtl .ui-tinytbl-tb-left,  .ui-tinytbl-rtl .ui-tinytbl-tf-left,  .ui-tinytbl-rtl .ui-tinytbl-th-left  { border-left: 0 none !important; margin-left: -1px; }
+.ui-tinytbl-rtl .ui-tinytbl-tb-right, .ui-tinytbl-rtl .ui-tinytbl-tf-right, .ui-tinytbl-rtl .ui-tinytbl-th-right { margin-right: -1px; }
+.ui-tinytbl-rtl .ui-tinytbl-tb-right { border-left: 0 none !important; }
